@@ -1,43 +1,4 @@
 
-// import { useDispatch, useSelector } from "react-redux";
-// import { removeFavorite } from "../favoritesSlice";
-// import { useNavigate } from "react-router-dom";
-
-// function Favorites() {
-//   const dispatch = useDispatch();
-//   const navigate = useNavigate();
-//   const favorites = useSelector((state) => state.favorites);
-
-//   if (favorites.length === 0) {
-//     return <h3>No favorites added yet ❤️</h3>;
-//   }
-
-//   return (
-//     <div>
-//       <h2>My Favorites</h2>
-//   <button
-//             onClick={() => navigate("/")}
-//             style={{ padding: "8px", marginBottom: "20px" }}
-//           >
-//             ⬅ Back to Home
-//           </button>
-//       {favorites.map((product) => (
-//         <div key={product.id} style={{ border: "1px solid #ccc", margin: 10 }}>
-//           <h4>{product.title}</h4>
-//           <img src={product.image} width="100" />
-//           <p>₹ {product.price}</p>
-
-//           <button onClick={() => dispatch(removeFavorite(product.id))}>
-//             ❌ Remove
-//           </button>
-        
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
-
-// export default Favorites;
 import { useDispatch, useSelector } from "react-redux";
 import { removeFavorite } from "../favoritesSlice";
 import { useNavigate } from "react-router-dom";
