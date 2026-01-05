@@ -46,10 +46,10 @@ function Home() {
 
   return (
     <div className="bg-white min-h-screen">
-      {/* 🔝 Header */}
+      {/*  Header */}
       <div className="border-b">
         <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
-          <h2 className="text-2xl font-semibold">Shop</h2>
+          <h2 className="text-2xl font-semibold">Product Dashboard</h2>
 
           <button
             onClick={() => navigate("/favorites")}
@@ -60,7 +60,7 @@ function Home() {
         </div>
       </div>
 
-      {/* 🔍 Filters */}
+      {/*  Filters */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 py-4">
         <input
           type="text"
@@ -93,7 +93,7 @@ function Home() {
         </select>
       </div>
 
-      {/* 🛍 Products */}
+      {/*  Products */}
       <div className="max-w-7xl mx-auto px-4 pb-10">
         {!selectedProduct ? (
           <ProductList
